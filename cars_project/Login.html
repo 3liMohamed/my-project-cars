@@ -1,0 +1,272 @@
+<!doctype html>
+
+<head>
+    <title> Login</title>
+    <style>
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        
+        .topnav .search-container {
+            float: right;
+        }
+        
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+        
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .icon-bar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+        
+        .icon-bar a {
+            float: left;
+            width: 10%;
+            text-align: center;
+            padding: 8px 0;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+        
+        .active {
+            background-color: dodgerblue;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        @import url('images/234.jpg');
+        html,
+        body {
+            background-image: url('images/234.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+        
+        .container {
+            height: 100%;
+            align-content: center;
+        }
+        
+        .card {
+            height: 500px;
+            width: 350px;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        .card-header h3 {
+            color: white;
+        }
+        
+        .input-group-prepend span {
+            width: 202px;
+            background-color: #FFC312;
+            color: black;
+            border: 0 !important;
+        }
+        
+        .input-container {
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+            border-radius: 30px;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+        
+        .btn {
+            background-color: dodgerblue;
+            color: white;
+            padding: 100px 120px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        
+        .input-field {
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+</head>
+
+<body>
+    <script src="jquery-3.4.1.min.js"></script>
+
+
+
+
+
+
+    <div class="icon-bar">
+        <a href="home.php"><i class="fa fa-home"></i></a>
+        <a class="active" href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+        <a href="new_account.html"><i class="fa fa-fw fa-user"></i></a>
+        <a href="https://demo.tutorialzine.com/2010/10/ajax-web-chat-jquery-css3/ajax-chat.html"><i class="fa fa-envelope"></i></a>
+        <a href="Sale.html"><i class="fa fa-car"></i></a>
+        <a href="profile.html">profile</a>
+        <div class="topnav">
+
+
+            <div class="search-container">
+                <form action="Sale.html">
+                    <input type="text" placeholder="Search.." name="search">
+
+                    <button type="submit"><i class="fa fa-search"> </i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+
+                    <form method="POST" style="max-width:500px;margin:auto">
+                        <h3>Login</h3>
+                        <br>
+                        <div class="d-flex justify-content-end social_icon">
+                            <span><i ></i></span>
+                            <span><i ></i></span>
+                            <span><i ></i></span>
+                        </div>
+
+
+
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                        <div class="input-container">
+                            <i class="fa fa-user icon"></i>
+                            <input class="input-field" type="text" placeholder="Username" name="username" id="username">
+                        </div>
+
+                        <div class="input-container">
+                            <i class="fa fa-key icon"></i>
+
+                            <input class="input-field" type="password" type="password" placeholder="Password" name="pass" id="pass">
+                        </div>
+
+
+                        <button type="submit" class="btn" id="login">Login</button>
+                        <div style="color: #FFC312;" id="errorMsg"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+
+            $('#login').on('click', function() {
+
+                var username = $('#username').val();
+                var pass = $('#pass').val();
+
+                $.ajax({
+                    url: 'login.php',
+                    method: 'POST',
+                    data: {
+                        username: username,
+                        pass: pass
+                    },
+                    success: function(data, status, xhr) {
+
+
+                        var data1 = data;
+                        console.log(data);
+                        if (data1 == 1) {
+                            location.href = 'home.php';
+                        } else {
+                            $('#errorMsg').html(data);
+                        }
+                    }
+
+                });
+
+
+
+                return false;
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
